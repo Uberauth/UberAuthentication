@@ -1,0 +1,91 @@
+Project UberAuthentication
+UberAuth
+Developed By Alex Davies
+
+Contents
+Project UberAuthentication	1
+What is it?	                2
+Features	                2
+Current system (Pre-BETA1)	3
+Current system (BETA1)	        3
+Purposed system (BETA2)	        3
+What’s next?	                4
+Where to get updates?	        5
+
+
+1.What is it?
+
+UberAuth (UberAuthentication) is an easy to implement MySQL login system. The system connects to a remote MySQL database and checks the details it is being given match the ones within the database before authenticating the user. 
+The next stage that takes place is the control panel system. Based on what level of access the account holder has they will either be taken to the higher level control panel or to the user control panel.  In the current build, BETA 1, Admin account holders can create and remove user, create and remove administrators and reset there password. As well as this they also have access to the UberAuth chat client built into the system. However, normal user account holders only have the permission to change their password and join the UberAuth chat client.
+Features
+
+2.The following is based on the final build and not the current build BETA 1. Some features on this list may never reach the final build but are here as a guideline for the future of the project.
+
+Client Features
+•	.dll with the code in its complete form, ready to be used on any application. – In Progress
+•	MySQL login system – Done!
+•	MySQL Chat system– Done!
+•	Website control – Done!
+•	Remote commands – In Progress
+•	Serial key protection- Research Needed
+•	Trial Mode – Research Needed
+•	Insta-Setup – In Progress
+
+Account features
+
+•	Administrators
+Create and Delete both user and admin accounts.
+Ban and remove bans from user accounts.
+Chat using the built-in client
+Send commands
+Reset Password
+
+•	Users
+Request admin rights
+Receive commands
+Chat using the built-in client
+Reset Password
+
+3.Current system (Pre-BETA1)
+A.	User Inputs Details
+B.	Compares against database
+C.	Compares Username against the admin list
+D.	Displays control panel based on admin rights
+
+3.Current system (BETA1)
+A.	Checks to see if database is online
+B.	Checks to see if your running the latest version
+C.	User Inputs Details
+D.	Compares against database
+E.	Compares Username against the admin list
+F.	Displays control panel based on admin rights
+
+3.Purposed system (BETA2)
+A.	Generates UID(On First Run)
+B.	Compares It to make sure it’s not taken(On First Run)
+C.	Registers it to the users account(On First Run)
+D.	Checks to see if database is online
+E.	Checks to see if your running the latest version
+F.	User Inputs Details
+G.	Compares against database
+H.	Compares Username against the admin list
+I.	Displays control panel based on admin rights
+
+3.Notes on code: 
+A.	Private Sub each key stage
+B.	Move Username + Password + UID checking to its own .dll file (ualogin.dll)
+C.	Move Admin code from the control panel to its own .dll file (uaadmin.dll)
+D.	Move user code from the control panel to its own .dll file (uauser.dll)
+E.	Possibly create .dll file for updates and chat too (uachat.dll, uaupdate.dll)
+
+4.What’s next?
+The release date for BETA 1 was 26/04/2011. I got it finished to a good standard a few hours early. I did however have problems with UID that I really want to get that finished before working on the commands stage. This is because UID was always part of the design and key to other areas of the project that I hope to release soon in the next BETA.
+
+5.Where to get updates?
+Currently the site has all the information needed on the project. If you don’t want to go there then I always update my twitter with progress whenever it is made. As well as this look out for video logs in the future.
+Website: http://uberdev.freezoka.net/ 
+Twitter: http://twitter.com/#!/UberAuth 
+GitHUB:  https://github.com/Uberauth/
+
+
+Document Last Updated: Monday, 25 April 2011
